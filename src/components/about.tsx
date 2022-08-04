@@ -61,14 +61,14 @@ const Card = (props: CardProps) => {
             />
             <Stack spacing={2} pl={3} align="left">
               <Heading
-                align="left"
+                // align="left"
                 fontSize="xl"
                 color={`mode.${colorMode}.career.text`}
               >
                 {title}
               </Heading>
               <Heading
-                align="left"
+                // align="left"
                 fontSize="sm"
                 color={`mode.${colorMode}.career.subtext`}
               >
@@ -131,7 +131,12 @@ const About = () => {
             </Flex>
           </Heading>
         </MotionBox>
-        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+        <VStack 
+        spacing={4} 
+        marginBottom={6} 
+        align="left" 
+        textAlign={"left"}
+        mx={[0, 0, 6]} mt={12}>
           {companies.map((company, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
               <Card
@@ -141,12 +146,11 @@ const About = () => {
                 skills={company.skills}
                 period={company.period}
                 logo={company.logo}
-                colorMode={colorMode}
-              />
+                colorMode={colorMode} alt={""}              />
             </MotionBox>
           ))}
         </VStack>
-        <Heading>
+        <Heading textAlign={"left"}>
           <Flex alignItems="center">
             <Header underlineColor={TURQUOISE} mt={0} mb={0}>
               Education
@@ -156,7 +160,7 @@ const About = () => {
             </Stack>
           </Flex>
         </Heading>
-        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12}>
+        <VStack spacing={4} marginBottom={6} align="left" mx={[0, 0, 6]} mt={12} textAlign="left">
           {institutes.map((institute, index) => (
             <MotionBox whileHover={{ y: -5 }} key={index}>
               <Card
@@ -166,8 +170,7 @@ const About = () => {
                 skills={institute.skills}
                 period={institute.period}
                 logo={institute.logo}
-                colorMode={colorMode}
-              />
+                colorMode={colorMode} alt={""}              />
             </MotionBox>
           ))}
         </VStack>

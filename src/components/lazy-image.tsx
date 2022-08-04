@@ -35,8 +35,8 @@ const LazyImage = (props: LazyImageProps) => {
             alt="cover image"
             width={width}
             height={height}
-            size={size}
-            layout={layout}
+            sizes={size}
+            // layout={layout}
             rounded={rounded}
             fallbackSrc={placeholder}
           />

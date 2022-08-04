@@ -8,7 +8,8 @@ import {
 } from "@chakra-ui/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import useSound from "use-sound";
-import lightswitch from "assets/audios/lightswitch.mp3";
+
+let lightswitch = "assets/audios/lightswitch.mp3";
 
 type ColorModeSwitcherProps = Omit<IconButtonProps, "aria-label">;
 
@@ -26,13 +27,13 @@ export const ColorModeSwitcher: React.FC<ColorModeSwitcherProps> = props => {
   });
 
   const handleClick = () => {
-    text === "dark" ? play({ id: "on" }) : play({ id: "off" });
+    text === "light" ? play({ id: "off" }) : play({ id: "on" });
     toggleColorMode();
   };
 
   return (
     <Tooltip
-      label={text === "dark" ? "Dark mode" : "Light mode"}
+      label={text === "light" ? "Light mode" : "Dark mode"}
       aria-label="A tooltip"
     >
       <IconButton

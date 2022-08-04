@@ -25,23 +25,15 @@ const MyStory = () => {
       <Section mb={14}>
         <PageSlideFade>
           <VStack>
-            <Header mt={0} mb={1}>
+            <Header mt={0} mb={1} underlineColor={""}>
               Developer Story
             </Header>
-            {/* <Text
-              fontSize={"xl"}
-              color={useColorModeValue("gray.500", "gray.200")}
-              maxW="lg"
-              textAlign="center"
-            >
-              This page tells you my story in timeline shape.
-            </Text> */}
           </VStack>
         </PageSlideFade>
       </Section>
       <VStack textAlign="start" align="flex-start" mb={0}>
         <Box>
-          <StoryTimeline year={"2021"} index={0} />
+          <StoryTimeline year={"2022"} index={0} />
           {companies.map((company, index) => (
             <StoryTimeline
               icon={BsFillBriefcaseFill}

@@ -61,7 +61,7 @@ const Btn = ({ icon, as, left, right, isRight, handleImageDir }: BtnProps) => {
     >
       <IconButton
         aria-label="icon button"
-        icon={icon}
+        // icon={icon}
         cursor="pointer"
         as={as}
         size="md"
@@ -143,14 +143,14 @@ const Carousel: React.SFC<CarouselProps> = ({
         />
       </AnimatePresence>
       <Btn
-        icon={<BiLeftArrowAlt />}
+        icon={BiLeftArrowAlt}
         as={BiRightArrowAlt}
         right="25px"
         isRight={true}
         handleImageDir={nextImage}
       />
       <Btn
-        icon={<BiRightArrowAlt />}
+        icon={BiRightArrowAlt}
         as={BiLeftArrowAlt}
         left="25px"
         isRight={false}

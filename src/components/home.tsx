@@ -18,6 +18,7 @@ import Projects from "./projects";
 import { projectsList } from "data/projects-list";
 import "style/style.css";
 import UserIcon from "assets/images/user_icon.png";
+import { repositories } from '../data/repositories';
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = "#ff9400";
@@ -129,7 +130,7 @@ const Home = () => {
             <UnorderedList textAlign="left" paddingLeft={5} m={0}>
             <ListItem>
                 <Link as={NavLink} to="/open-source">
-                  Live/Local Github Repos
+                  Github Repositories
                   <Badge ml="1" colorScheme="green">
                     New
                   </Badge>

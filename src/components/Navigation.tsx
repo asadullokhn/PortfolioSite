@@ -6,7 +6,6 @@ import RepositoriesList from "./repositories-list";
 import Home from "./home";
 import TechStack from "./tech-stack";
 import Achievements from "./achievements";
-import NotebookPost from "./blog/notebook-app/notebook-post";
 // import EducationStory from "./education-story";
 import MyStory from "./my-story";
 
@@ -18,12 +17,6 @@ const routes = [
     exact: true,
     name: "Achievements",
     component: Achievements
-  },
-  {
-    path: "/blog/notebook-app",
-    exact: true,
-    name: "Post",
-    component: NotebookPost
   },
   {
     path: "/open-source",
@@ -44,7 +37,7 @@ const Navigation = () => {
           key={idx}
           exact={route.exact}
           path={route.path}
-          render={props => <route.component {...props} />}
+          render={() => <route.component />}
         />
       ))}
       <Redirect to="/" />

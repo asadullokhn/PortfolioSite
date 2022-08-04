@@ -7,8 +7,9 @@ import {
 } from "@chakra-ui/react";
 import { motion, isValidMotionProp } from "framer-motion";
 import placeholder from "assets/images/placeholder.png";
+import React from "react";
 
-export const MotionBox = motion.custom(
+export const MotionBox = motion(
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element
@@ -17,7 +18,7 @@ export const MotionBox = motion.custom(
     return <Box ref={ref} {...chakraProps} />;
   })
 );
-export const MotionFlex = motion.custom(
+export const MotionFlex = motion(
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element
@@ -27,7 +28,7 @@ export const MotionFlex = motion.custom(
   })
 );
 
-export const MotionImage = motion.custom(
+export const MotionImage = motion(
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
       // do not pass framer props to DOM element

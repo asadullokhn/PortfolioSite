@@ -18,52 +18,37 @@ import heroku from "assets/images/skills/heroku.png";
 import docean from "assets/images/skills/digital-ocean.png";
 import aws from "assets/images/skills/aws.png";
 import nginx from "assets/images/skills/nginx.png";
+import CodeCraftLogo from 'assets/images/logos/codecraft.png';
 
 export const companies = [
   {
-    title: "Phaedra Solutions",
+    title: "Najot Ta'lim",
     alt: "PS image",
-    role: "Senior Software Engineer",
-    skills: ["ruby", "rails", "typescript", "javascript", "react", "aws"],
-    period: "2019 - Present",
-    logo: PhaedraLogo
+    role: "Second Teacher for \"dotNET\" groups",
+    period: "05/2022 - Present",
+    skills: ["Asp.Net", "WPF", "C# core", "PostgreSQL", "MSSQL", "aws"],
+    logo: NajotLogo
   },
   {
-    title: "Brainx Technologies",
+    title: "Freelance",
     alt: "BT image",
     role: "Software Engineer",
-    skills: ["ruby", "rails", "javascript", "python"],
-    period: "2018 - 2019",
-    logo: BrainxLogo
+    skills: ["ruby", "rails", "typescript", "javascript", "react", "aws"],
+    period: "2021 - Present",
+    logo: FreelanceLogo
   },
-  {
-    title: "Codenya Studio",
-    alt: "CS image",
-    role: "Co-founder, CTO",
-    skills: ["ruby", "rails", "python", "typescript", "react", "aws"],
-    period: "2018 - Present",
-    logo: CodenyaLogo
-  },
-  {
-    title: "Brainplow",
-    alt: "Brainplow image",
-    role: "Software Engineer",
-    skills: ["javascript", "python", "angular"],
-    period: "2017 - 2018",
-    logo: BrainplowLogo
-  }
 ];
 
 export const institutes = [
   {
-    short_title: "FAST - NUCES",
-    title: "National University of Computer and Emerging Sciences",
+    short_title: "Codecraft.uz",
+    title: "CodeCraft.uz",
     alt: "Nuces image",
-    role: "Bachelor's Degree in Computer Science",
-    skills: ["project management", "web development", "data structures"],
-    period: "2013 - 2017",
-    startingYear: "2013",
-    logo: UniLogo,
+    role: "",
+    skills: ["AppInventor (constructor for Android applications)", "Scratch (constructor)", "basic programming consepts"],
+    period: "2015 - 2016",
+    startingYear: "2015",
+    logo: CodeCraftLogo,
     awards: [
       {
         title: "Speed Programming Battle",

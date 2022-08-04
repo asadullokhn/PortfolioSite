@@ -42,7 +42,7 @@ const TechStack = () => {
       <VStack spacing={8}>
         <Section>
           <VStack>
-            <Header mt={0} mb={1}>
+            <Header mt={0} mb={1} underlineColor={""}>
               Tech Stack
             </Header>
             <Text
@@ -76,7 +76,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiTwotoneThunderbolt} weight="fill" />
+                  <Icon as={AiTwotoneThunderbolt} fontWeight="fill"/>
                   <Text>All</Text>
                 </HStack>
               </Tab>
@@ -92,7 +92,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("development")}
               >
                 <HStack spacing={1}>
-                  <Icon as={BiDesktop} weight="fill" />
+                  <Icon as={BiDesktop} fontWeight="fill" />
                   <Text>Web Development</Text>
                 </HStack>
               </Tab>
@@ -108,7 +108,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("design")}
               >
                 <HStack spacing={1}>
-                  <Icon as={GiSpiderWeb} weight="fill" />
+                  <Icon as={GiSpiderWeb} fontWeight="fill" />
                   <Text>Web Design</Text>
                 </HStack>
               </Tab>
@@ -124,7 +124,7 @@ const TechStack = () => {
                 onClick={() => filterSkills("devops")}
               >
                 <HStack spacing={1}>
-                  <Icon as={AiOutlineCloudServer} weight="fill" />
+                  <Icon as={AiOutlineCloudServer} fontWeight="fill" />
                   <Text>Devops</Text>
                 </HStack>
               </Tab>
@@ -142,8 +142,7 @@ const TechStack = () => {
                         key={index}
                         name={tool.name}
                         description={tool.description}
-                        image={tool.image}
-                        platform={"web"}
+                        image={tool.image}                        
                         link={tool.link}
                       />
                     ))}
@@ -163,7 +162,6 @@ const TechStack = () => {
                         name={tool.name}
                         description={tool.description}
                         image={tool.image}
-                        platform={"web"}
                         link={tool.link}
                       />
                     ))}
@@ -183,7 +181,6 @@ const TechStack = () => {
                         name={tool.name}
                         description={tool.description}
                         image={tool.image}
-                        platform={"web"}
                         link={tool.link}
                       />
                     ))}
@@ -203,7 +200,6 @@ const TechStack = () => {
                         name={tool.name}
                         description={tool.description}
                         image={tool.image}
-                        platform={"web"}
                         link={tool.link}
                       />
                     ))}

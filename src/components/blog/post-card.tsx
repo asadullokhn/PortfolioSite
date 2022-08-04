@@ -17,8 +17,8 @@ import {
 import { Link as NavLink } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { getTagColor } from "style/theme";
-import dev from "assets/images/logos/dev.png";
-import dev2 from "assets/images/logos/dev_white.png";
+import dev from "assets/images/logos/telegram.png";
+import dev2 from "assets/images/logos/telegram_dark.png";
 import { CardTransition } from "components/page-transitions";
 
 export interface PostCardProps {
@@ -34,7 +34,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
       <VStack
         spacing={1}
         p={4}
-        isExternal
+        // isExternal
         _hover={{ shadow: "md", textDecoration: "none" }}
         borderWidth="1px"
         position="relative"
@@ -63,7 +63,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
             </Box>
           </Tooltip>
         )}
-        <Heading fontSize="lg" align="left" mt={0}>
+        <Heading fontSize="lg" textAlign="left"mt={0}>
           {article.external ? (
             <Text as={Link} href={article.link} target="_blank">
               {article.title}
@@ -72,17 +72,6 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
             <Link as={NavLink} to={article.link}>
               {article.title}
             </Link>
-          )}
-          {article.isNew && (
-            <Badge
-              ml="1"
-              mb="1"
-              colorScheme="green"
-              fontSize="0.7em"
-              lineHeight={1.5}
-            >
-              New
-            </Badge>
           )}
         </Heading>
         <HStack spacing={2} isInline>

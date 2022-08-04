@@ -1,12 +1,12 @@
 import { images } from "./notebook-app/images";
 
-export const articles = [
+export const articles= [
   {
     title: "Bugun Moliya vazirligida IT'ga ixtisoslashgan universitetlar/o'quv markazlar boshqaruvchilari va talabalari ishtirokida \"IT Career Event\" tadbiri tashkil etildi.",
     tags: [],
+    desc: "",
     link: "https://t.me/asadullokh_nurullaev/57",
     external: true,
-    isNew: true,
     published: "2 June 2022",
     readTime: "1 min read",
     views: "209"

@@ -35,7 +35,7 @@ const Footer = () => {
         justifyContent={["center", "space-between"]}
         alignItems="center"
         w="100%"
-        ju
+        // ju
       >
         {/* <HStack> */}
         <Text

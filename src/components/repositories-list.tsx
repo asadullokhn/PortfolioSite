@@ -10,10 +10,9 @@ import {
 import { PageSlideFade } from "./page-transitions";
 import Header from "./header";
 import { RiSignalTowerLine, RiWifiOffLine } from "react-icons/ri";
-import OfflineData from "./offline-data";
 import LiveData from "./live-data";
 import useSound from "use-sound";
-import lightswitch from "assets/audios/lightswitch.mp3";
+let lightswitch = "assets/audios/lightswitch.mp3";
 
 const TURQUOISE = "#06b6d4";
 
@@ -58,17 +57,6 @@ const RepositoriesList = () => {
               {...iconProps}
             />
             </Tooltip>
-          <Tooltip hasArrow label="Local github repos" placement="top">
-            <IconButton
-              aria-label={"live"}
-              size="md"
-              colorScheme={"linkedin"}
-              icon={<RiWifiOffLine />}
-              isActive={activeTab === "offline"}
-              onClick={() => handleClick('offline')}
-              {...iconProps}
-            />
-            </Tooltip>
           </HStack>
         </HStack>
         <Text
@@ -79,7 +67,7 @@ const RepositoriesList = () => {
           or contributed to.
         </Text>
       </VStack>
-      {activeTab === "live" ? <LiveData /> : <OfflineData />}
+      {<LiveData/>}
     </PageSlideFade>
   );
 };

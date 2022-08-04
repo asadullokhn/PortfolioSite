@@ -20,7 +20,7 @@ const LiveData = () => {
     if (isLargerThan720) {
       columnWidth = 300;
     } else {
-      columnWidth = "100%";
+      // columnWidth = "100%";
     }
   }
 

@@ -4,16 +4,18 @@ type project = {
     logo: string;
     link: string;
     desc: string;
-    tech: string[];
+    blurHash: string;
+    technologies: string[];
   };
 
   type article = {
     title: string;
-    desc: string;
+    desc?: string;
     link: string;
     views: string;
     published: string;
     tags: string[];
-    github_url: string;
+    external: boolean;
+    readTime: string;
   }
   

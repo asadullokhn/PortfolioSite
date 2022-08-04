@@ -44,7 +44,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
   return (
     <MotionBox whileHover={{ y: -5 }}>
       <Box
-        size="xl"
+        // size="xl"
         py={2}
         px={[2, 4]}
         mt={2}
