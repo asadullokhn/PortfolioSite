@@ -1,5 +1,3 @@
-import { images } from "./notebook-app/images";
-
 export const articles= [
   {
     title: "Bugun Moliya vazirligida IT'ga ixtisoslashgan universitetlar/o'quv markazlar boshqaruvchilari va talabalari ishtirokida \"IT Career Event\" tadbiri tashkil etildi.",
@@ -30,7 +28,6 @@ export const articles= [
     external: true,
     published: "7 March 2022",
     readTime: "1 min read",
-    images: images,
     views: "611"
   },
   {
@@ -52,7 +49,6 @@ export const articles= [
     external: true,
     published: "3 December 2021",
     readTime: "2 min read",
-    images: images,
     views: "12,9k"
   },
 ];
