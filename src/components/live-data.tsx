@@ -8,7 +8,7 @@ import StackGrid from "react-stack-grid";
 import CardSkeleton from "./card-skeleton";
 
 const LiveData = () => {
-  const { get, loading, error, data } = useFetch("https://api.github.com");
+  const { get, loading} = useFetch("https://api.github.com");
   const [repos, setRepos] = useState([]);
   const [isLargerThan720] = useMediaQuery("(min-width: 720px)");
   const [isLargerThan982] = useMediaQuery("(min-width: 982px)");
