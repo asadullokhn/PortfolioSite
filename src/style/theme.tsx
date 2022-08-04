@@ -179,13 +179,13 @@ export const theme = extendTheme({
 
 export const getTagColor = type => {
   type = type.toLowerCase()
-  if (type === "rails" || type === "ruby") {
+  if (type === "WPF" || type === "wpf") {
     return "red";
-  } else if (type === "react") {
+  } else if (type === "Asp.Net") {
     return "cyan";
-  } else if (type === "javascript") {
+  } else if (type === "C# core") {
     return "yellow";
-  } else if (type === "typescript" || type === "tailwindcss") {
+  } else if (type === "EF Core" || type === "aws") {
     return "blue";
   } else if (type === "chakraui" || type === "css") {
     return "teal";

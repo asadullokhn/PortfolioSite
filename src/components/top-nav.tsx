@@ -20,7 +20,6 @@ import {
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
 import { ColorModeSwitcher } from "ColorModeSwitcher";
 import UserIcon from "assets/images/user_icon.png";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
@@ -39,8 +38,8 @@ const mobileLinks = [
   { name: "Open Source", path: "/open-source" },
   { name: "Blog", path: "/blog" },
   { name: "Tech Stack", path: "/tech-stack" },
-  { name: "Developer Story", path: "/story-timeline" }
-  
+  { name: "Developer Story", path: "/story-timeline" },
+  { name: "Achievements", path: "/achievements" }
 ];
 
 interface NavLinkProps {
@@ -105,7 +104,6 @@ export default function TopNav() {
                 size={"sm"}
                 href={"/portfolio"}
                 src={UserIcon}
-                // src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
               />
             </Box>
             <HStack
@@ -192,18 +190,6 @@ export default function TopNav() {
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
-            <IconButton
-              as={Link}
-              href={"https://github.com/asadullokhn"}
-              size={"md"}
-              icon={<FaGithub />}
-              aria-label={"Github account"}
-              bg={useColorModeValue("white", "gray.700")}
-              _hover={{
-                textDecoration: "none",
-                bg: useColorModeValue("gray.200", "gray.900")
-              }}
-            />
             <ColorModeSwitcher justifySelf="flex-end" />
           </Flex>
         </Flex>

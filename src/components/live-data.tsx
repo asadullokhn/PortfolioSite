@@ -7,11 +7,14 @@ import RepositoryCard from "./live-data-card";
 import StackGrid from "react-stack-grid";
 import CardSkeleton from "./card-skeleton";
 
+
+
 const LiveData = () => {
   const { get, loading } = useFetch("https://api.github.com");
   const [repos, setRepos] = useState([]);
   const [isLargerThan720] = useMediaQuery("(min-width: 720px)");
   const [isLargerThan982] = useMediaQuery("(min-width: 982px)");
+  const screenWidth = window.innerWidth;
 
   let columnWidth = 390;
   if (isLargerThan982) {
@@ -20,7 +23,7 @@ const LiveData = () => {
     if (isLargerThan720) {
       columnWidth = 300;
     } else {
-      // columnWidth = "100%";
+      columnWidth = screenWidth-50;
     }
   }
 

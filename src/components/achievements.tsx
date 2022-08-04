@@ -1,19 +1,11 @@
 import * as React from "react";
-import {
-  FiPackage,
-  FiHome,
-  FiEdit2,
-  FiUsers,
-  FiBarChart2
-} from "react-icons/fi";
+import { FiHome} from "react-icons/fi";
 import { VStack, Heading, Box, Link, LinkProps } from "@chakra-ui/react";
 import { TimelineItem } from "./Timeline";
 import { PageSlideFade } from "./page-transitions";
 import { Link as NavLink } from "react-router-dom";
 import Header from "./header";
-import { BiCertification, BiWon } from "react-icons/bi";
-import { RiCupFill, RiCupLine } from "react-icons/ri";
-import { GiStrong, GiStrongMan } from "react-icons/gi";
+import { GiStrong } from "react-icons/gi";
 import { FaCertificate } from "react-icons/fa";
 
 interface ExternalLinkProps extends LinkProps {

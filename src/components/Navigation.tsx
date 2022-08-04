@@ -6,7 +6,6 @@ import RepositoriesList from "./repositories-list";
 import Home from "./home";
 import TechStack from "./tech-stack";
 import Achievements from "./achievements";
-// import EducationStory from "./education-story";
 import MyStory from "./my-story";
 
 const routes = [

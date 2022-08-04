@@ -46,7 +46,9 @@ const RepositoriesList = () => {
             Open Source
           </Header>
           <HStack>
-          <Tooltip hasArrow label="Live github repos" placement="top">
+          <Tooltip hasArrow 
+          label="Live github repositories" 
+          placement="top">
             <IconButton
               aria-label={"live"}
               size="md"
