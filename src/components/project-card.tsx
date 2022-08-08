@@ -54,7 +54,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           size="sm"
           width={33}
           height={33}
-          layout="fixed"
+          // layout="fixed"
           rounded="md"
         />
         <VStack align="start" justify="flex-start">

@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { PageSlideFade } from "./page-transitions";
 import Header from "./header";
-import { RiSignalTowerLine, RiWifiOffLine } from "react-icons/ri";
+import { RiSignalTowerLine} from "react-icons/ri";
 import LiveData from "./live-data";
 import useSound from "use-sound";
 let lightswitch = "assets/audios/lightswitch.mp3";
@@ -63,8 +63,7 @@ const RepositoriesList = () => {
         </HStack>
         <Text
           color={useColorModeValue("gray.500", "gray.200")}
-          textAlign="left"
-        >
+          textAlign="left">
           This page lists some of the open source repositories I have published
           or contributed to.
         </Text>

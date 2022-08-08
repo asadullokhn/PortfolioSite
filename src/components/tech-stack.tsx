@@ -32,7 +32,6 @@ const TechStack = () => {
   }, []);
 
   const filterSkills = tab => {
-    console.log(skills.filter(skill => skill.type === tab));
     if (tab.length) setSkillsList(skills.filter(skill => skill.type === tab));
     else setSkillsList(skills);
   };
@@ -89,27 +88,11 @@ const TechStack = () => {
                 }}
                 mr={2}
                 mt={2}
-                onClick={() => filterSkills("development")}
+                onClick={() => filterSkills("languageFramework")}
               >
                 <HStack spacing={1}>
                   <Icon as={BiDesktop} fontWeight="fill" />
-                  <Text>Web Development</Text>
-                </HStack>
-              </Tab>
-              <Tab
-                bg={useColorModeValue("gray.100", "gray.800")}
-                color={useColorModeValue("gray.600", "gray.500")}
-                _selected={{
-                  color: "green.800",
-                  bg: "green.100"
-                }}
-                mr={2}
-                mt={2}
-                onClick={() => filterSkills("design")}
-              >
-                <HStack spacing={1}>
-                  <Icon as={GiSpiderWeb} fontWeight="fill" />
-                  <Text>Web Design</Text>
+                  <Text>Languages And Frameworks</Text>
                 </HStack>
               </Tab>
               <Tab
@@ -126,6 +109,22 @@ const TechStack = () => {
                 <HStack spacing={1}>
                   <Icon as={AiOutlineCloudServer} fontWeight="fill" />
                   <Text>Devops</Text>
+                </HStack>
+              </Tab>
+              <Tab
+                bg={useColorModeValue("gray.100", "gray.800")}
+                color={useColorModeValue("gray.600", "gray.500")}
+                _selected={{
+                  color: "green.800",
+                  bg: "green.100"
+                }}
+                mr={2}
+                mt={2}
+                onClick={() => filterSkills("addition")}
+              >
+                <HStack spacing={1}>
+                  <Icon as={GiSpiderWeb} fontWeight="fill" />
+                  <Text>Additional</Text>
                 </HStack>
               </Tab>
             </TabList>

@@ -10,13 +10,12 @@ type LazyImageProps = {
   size?: string;
   width?: number;
   height?: number;
-  layout?: string;
   rounded?: string;
 };
 
 const LazyImage = (props: LazyImageProps) => {
-  const { src, blurHash, width, height, size, layout, rounded } = props;
-
+  const { src, blurHash, width, height, size, rounded } = props;
+ 
   return (
     <ProgressiveImage delay={500} src={src} placeholder={placeholder}>
       {(src, loading) => {

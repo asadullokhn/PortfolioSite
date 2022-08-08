@@ -3,7 +3,6 @@ import { FiHome} from "react-icons/fi";
 import { VStack, Heading, Box, Link, LinkProps } from "@chakra-ui/react";
 import { TimelineItem } from "./Timeline";
 import { PageSlideFade } from "./page-transitions";
-import { Link as NavLink } from "react-router-dom";
 import Header from "./header";
 import { GiStrong } from "react-icons/gi";
 import { FaCertificate } from "react-icons/fa";
@@ -27,18 +26,6 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({
   );
 };
 
-const InternalLink: React.FC<ExternalLinkProps> = ({
-  url,
-  linkProps,
-  text,
-  ...props
-}) => {
-  return (
-    <Link as={NavLink} to={url} {...linkProps} {...props}>
-      {text}
-    </Link>
-  );
-};
 const Achievements = () => {
   return (
     <PageSlideFade>
