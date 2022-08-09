@@ -45,6 +45,7 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
           placement={index % 2 === 0 ? "right" : "left"}
           closeOnBlur={false}
           variant="responsive"
+          autoFocus={false}
           // matchWidth={true}
           
           // width={["9.3rem", "13rem", "15rem", "100%"]}
@@ -75,7 +76,7 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
                   color={color}
                   pos="absolute"
                   left="0.875rem"
-                  top="0.875rem"
+                  top="0.875rem" 
                 />
               )}
             </Box>
@@ -86,7 +87,9 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
                 <PopoverArrow />
                 {/* <PopoverCloseButton /> */}
                 <PopoverBody>
-                  <Box overflow="scroll">{children}</Box>
+                  <Box 
+                  overflow="scroll"
+                  >{children}</Box>
                 </PopoverBody>
               </PopoverContent>
             )}

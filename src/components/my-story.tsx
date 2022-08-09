@@ -65,9 +65,9 @@ const MyStory = () => {
         <Box>
           <StoryTimeline year={"2022"} index={0} />
           {companies.map((company, index) => (
-            <StoryTimeline
+            <StoryTimeline isolation={"auto"}
               icon={BsFillBriefcaseFill}
-              index={index}
+              index={index}  
             >
               {" "}
               <HStack>
