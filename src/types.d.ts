@@ -8,14 +8,18 @@ type project = {
     technologies: string[];
   };
 
-  type article = {
-    title: string;
-    desc?: string;
-    link: string;
-    views: string;
-    published: string;
-    tags: string[];
-    external: boolean;
-    readTime: string;
-  }
-  
+type article = {
+  title: string;
+  desc?: string;
+  link: string;
+  views: string;
+  published: string;
+  tags: string[];
+  external: boolean;
+  readTime: string;
+}
+
+declare module '*.mp3' {
+  const src: string;
+  export default src;
+}

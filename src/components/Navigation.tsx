@@ -36,7 +36,7 @@ const Navigation = () => {
           key={idx}
           exact={route.exact}
           path={route.path}
-          render={() => <route.component />}
+          render={() => <route.component/>}
         />
       ))}
       <Redirect to="/" />

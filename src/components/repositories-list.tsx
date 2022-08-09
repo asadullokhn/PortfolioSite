@@ -12,7 +12,7 @@ import Header from "./header";
 import { RiSignalTowerLine} from "react-icons/ri";
 import LiveData from "./live-data";
 import useSound from "use-sound";
-let lightswitch = "assets/audios/lightswitch.mp3";
+import lightswitch from "assets/audios/lightswitch.mp3";
 
 const TURQUOISE = "#06b6d4";
 

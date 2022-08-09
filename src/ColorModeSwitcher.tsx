@@ -9,7 +9,7 @@ import {
 import { FaMoon, FaSun } from "react-icons/fa";
 import useSound from "use-sound";
 
-let lightswitch = "assets/audios/lightswitch.mp3";
+import lightswitch from "assets/audios/lightswitch.mp3";
 
 type ColorModeSwitcherProps = Omit<IconButtonProps, "aria-label">;
 
