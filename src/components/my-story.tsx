@@ -53,7 +53,12 @@ const MyStory = () => {
             maxW={800}
             display={["inherit", "inherit", "none"]}
           >
-            <Header margin={5} alignContent={"center"} underlineColor={""} >This feature is not awailable on mobile clients</Header>
+            <Header 
+              margin={5} 
+              alignContent={"center"} 
+              underlineColor={""}>
+              This feature is not awailable on mobile clients
+            </Header>
           </Box>
         ) : 
       <VStack textAlign="start" align="flex-start" mb={0}>
@@ -90,7 +95,7 @@ const MyStory = () => {
               <Text fontSize={[12, 13, 15]}>{company.role}</Text>
             </StoryTimeline>
           ))}
-          <StoryTimeline year={"2017"} index={0} />
+          <StoryTimeline year={"2021"} index={0} />
           {institutes.map((institute, index) => (
             <>
               <StoryTimeline

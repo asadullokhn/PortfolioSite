@@ -13,10 +13,11 @@ import {
   useColorModeValue,
   SimpleGrid
 } from "@chakra-ui/react";
+
 import { PageSlideFade } from "./page-transitions";
 import Section from "./section";
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
-import { GiSpiderWeb, GiStrongMan } from "react-icons/gi";
+import { GiStrongMan } from "react-icons/gi";
 import SkillCard from "./skill-card";
 import { skills } from "data/data";
 import Header from "./header";

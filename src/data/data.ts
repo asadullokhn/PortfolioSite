@@ -28,7 +28,7 @@ import rider from "assets/images/skills/rider.png";
 
 export const companies = [
   {
-    title: "Najot Ta'lim",
+    title: "Najot Ta'lim IT school",
     alt: "PS image",
     role: "Second Teacher for \"dotNET\" groups",
     period: "05/2022 - Present",
@@ -39,13 +39,31 @@ export const companies = [
     title: "Freelance",
     alt: "BT image",
     role: "Software Engineer",
-    skills: ["ruby", "rails", "typescript", "javascript", "react", "aws"],
+    skills: ["Asp.Net", "WPF", "heroku", "aws", "googlecloud"],
     period: "2021 - Present",
     logo: FreelanceLogo
   },
 ];
 
 export const institutes = [
+  {
+    short_title: "Najot Ta'lim",
+    title: "Najot Ta'lim IT school",
+    alt: "college image",
+    role: "",
+    skills: ["foundation", "bootcamp"],
+    period: "2021 - 2022",
+    startingYear: "2021",
+    logo: NajotLogo,
+    awards: [
+      {
+          title: "Specialty grant winner",
+          description:
+            "Got a high score on the algorithmic programming exam",
+          date: "December, 2021"
+      },
+    ]
+  },
   {
     short_title: "Codecraft.uz",
     title: "CodeCraft.uz",
@@ -76,16 +94,6 @@ export const institutes = [
       // }
     ]
   },
-  {
-    short_title: "Govt Degree College",
-    title: "Govt Degree College",
-    alt: "college image",
-    role: "FSC",
-    skills: ["mathematic", "chemistry", "physics"],
-    period: "2011 - 2013",
-    startingYear: "2011",
-    logo: ""
-  }
 ];
 
 //AspNetCore, WPF
