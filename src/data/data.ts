@@ -11,7 +11,9 @@ import react from "assets/images/skills/react.png";
 import python from "assets/images/skills/python.png";
 import csharp from "assets/images/skills/csharp.png";
 import clang from "assets/images/skills/clang.png";
+
 import linq from "assets/images/skills/linq.png";
+import restful from "assets/images/skills/restapi.png";
 
 import wpf from "assets/images/skills/wpf.png";
 import aspnet from "assets/images/skills/aspnet.png";
@@ -93,34 +95,6 @@ export const institutes = [
 // C, C#, Python, XAML, XML
 
 export const skills = [
-  {
-    name: "LINQ",
-    description: "Language integrated query",
-    link: "",
-    type: "addition",
-    image: linq
-  },
-  {
-    name: "Rest API",
-    description: "API",
-    link: "",
-    type: "addition",
-    image: postgres
-  },
-  {
-    name: "EF Core",
-    description: "ORM",
-    link: "",
-    type: "addtional",
-    image: postgres
-  },
-  {
-    name: "Dapper",
-    description: "ORM",
-    link: "",
-    type: "addition",
-    image: postgres
-  },
   {
     name: "PostgresSQL",
     description: "Database",
@@ -218,6 +192,34 @@ export const skills = [
     link: "https://www.nginx.com/",
     type: "devops",
     image: nginx
+  },
+  {
+    name: "LINQ",
+    description: "Language integrated query",
+    link: "",
+    type: "addition",
+    image: linq
+  },
+  {
+    name: "RESTful",
+    description: "API",
+    link: "",
+    type: "addition",
+    image: restful
+  },
+  {
+    name: "EF Core",
+    description: "ORM",
+    link: "",
+    type: "addition",
+    image: aspnet
+  },
+  {
+    name: "Dapper",
+    description: "ORM",
+    link: "",
+    type: "addition",
+    image: aspnet
   },
   {
     name: "JetBrains Rider",

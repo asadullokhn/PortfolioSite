@@ -16,7 +16,6 @@ import {
 import { PageSlideFade } from "./page-transitions";
 import Section from "./section";
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
-import { BiDesktop } from "react-icons/bi";
 import { GiSpiderWeb, GiStrongMan } from "react-icons/gi";
 import SkillCard from "./skill-card";
 import { skills } from "data/data";
@@ -24,6 +23,7 @@ import Header from "./header";
 import { MotionBox } from "./motion";
 import { container } from "./page-transitions";
 import { FiDatabase } from "react-icons/fi";
+import { BiPlug } from "react-icons/bi";
 
 const TechStack = () => {
   const [skillsList, setSkillsList] = useState([]);
@@ -113,10 +113,10 @@ const TechStack = () => {
                   <Text>Databases</Text>
                 </HStack>
               </Tab>
-              
+
               <Tab
                 bg={useColorModeValue("gray.100", "gray.800")}
-                color={useColorModeValue("gray.600", "gray.500")}
+                color={useColorModeValue("gray.500", "gray.500")}
                 _selected={{
                   color: "red.800",
                   bg: "red.100"
@@ -124,29 +124,31 @@ const TechStack = () => {
                 mr={2}
                 mt={2}
                 onClick={() => filterSkills("devops")}
-              >
+                >
                 <HStack spacing={1}>
                   <Icon as={AiOutlineCloudServer} fontWeight="fill" />
                   <Text>Devops</Text>
                 </HStack>
               </Tab>
+
               <Tab
                 bg={useColorModeValue("gray.100", "gray.800")}
-                color={useColorModeValue("gray.600", "gray.500")}
+                color={useColorModeValue("gray.500", "gray.500")}
                 _selected={{
-                  color: "green.800",
-                  bg: "green.100"
+                  color: useColorModeValue("gray.100", "gray.800"),
+                  bg: useColorModeValue("gray.900", "gray.100")
                 }}
                 mr={2}
                 mt={2}
                 onClick={() => filterSkills("addition")}
-              >
+                >
                 <HStack spacing={1}>
-                  <Icon as={GiSpiderWeb} fontWeight="fill" />
+                  <Icon as={BiPlug} fontWeight="fill" />
                   <Text>Additional</Text>
                 </HStack>
               </Tab>
             </TabList>
+
             <TabPanels minHeight={"45vh"}>
               <TabPanel px={0}>
                 <MotionBox
@@ -161,6 +163,25 @@ const TechStack = () => {
                         name={tool.name}
                         description={tool.description}
                         image={tool.image}                        
+                        link={tool.link}
+                      />
+                    ))}
+                  </SimpleGrid>
+                </MotionBox>
+              </TabPanel>
+              <TabPanel px={0}>
+                <MotionBox
+                  variants={container}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
+                    {skillsList.map((tool, index) => (
+                      <SkillCard
+                        key={index}
+                        name={tool.name}
+                        description={tool.description}
+                        image={tool.image}
                         link={tool.link}
                       />
                     ))}
