@@ -223,7 +223,7 @@ export const skills = [
     name: "JetBrains Rider",
     description: "Code editor of choice",
     link: "https://code.visualstudio.com/",
-    type: "editor",
+    type: "addition",
     image: rider
   }
 ];

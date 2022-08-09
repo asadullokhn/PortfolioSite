@@ -17,12 +17,13 @@ import { PageSlideFade } from "./page-transitions";
 import Section from "./section";
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
 import { BiDesktop } from "react-icons/bi";
-import { GiSpiderWeb } from "react-icons/gi";
+import { GiSpiderWeb, GiStrongMan } from "react-icons/gi";
 import SkillCard from "./skill-card";
 import { skills } from "data/data";
 import Header from "./header";
 import { MotionBox } from "./motion";
 import { container } from "./page-transitions";
+import { FiDatabase } from "react-icons/fi";
 
 const TechStack = () => {
   const [skillsList, setSkillsList] = useState([]);
@@ -91,10 +92,28 @@ const TechStack = () => {
                 onClick={() => filterSkills("languageFramework")}
               >
                 <HStack spacing={1}>
-                  <Icon as={BiDesktop} fontWeight="fill" />
+                  <Icon as={GiStrongMan} fontWeight="fill" />
                   <Text>Languages And Frameworks</Text>
                 </HStack>
               </Tab>
+              
+              <Tab
+                bg={useColorModeValue("gray.100", "gray.800")}
+                color={useColorModeValue("gray.500", "gray.500")}
+                _selected={{
+                  color: useColorModeValue("gray.100", "gray.800"),
+                  bg: useColorModeValue("gray.900", "gray.100")
+                }}
+                mr={2}
+                mt={2}
+                onClick={() => filterSkills("database")}
+                >
+                <HStack spacing={1}>
+                  <Icon as={FiDatabase} fontWeight="fill" />
+                  <Text>Databases</Text>
+                </HStack>
+              </Tab>
+              
               <Tab
                 bg={useColorModeValue("gray.100", "gray.800")}
                 color={useColorModeValue("gray.600", "gray.500")}

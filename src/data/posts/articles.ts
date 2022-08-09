@@ -1,8 +1,8 @@
 export const articles= [
   {
     title: "Bugun Moliya vazirligida IT'ga ixtisoslashgan universitetlar/o'quv markazlar boshqaruvchilari va talabalari ishtirokida \"IT Career Event\" tadbiri tashkil etildi.",
-    tags: [],
     desc: "",
+    tags: [],
     link: "https://t.me/asadullokh_nurullaev/57",
     external: true,
     published: "2 June 2022",
@@ -11,8 +11,7 @@ export const articles= [
   },
   {
     title: "Биринчи “job interview”… Бугун ўз йўналишим (dotnet backend) бўйича биринчи суҳбатга бордим.",
-    desc:
-      "Устозимиз доим «Қаерга топширсангиз ҳам...",
+    desc: "Устозимиз доим «Қаерга топширсангиз ҳам...",
     tags: [],
     link: "https://t.me/asadullokh_nurullaev/51",
     external: true,

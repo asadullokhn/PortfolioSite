@@ -1,8 +1,8 @@
 import dgLogo from "assets/images/projects/dg_logo.png";
-import notch from "assets/images/projects/notch.png";
-import workof from "assets/images/projects/workof.png";
-import souq from "assets/images/projects/souq.png";
 import botLogo from "assets/images/projects/bot.png";
+import qualificationLogo from "assets/images/projects/qualification.png";
+import testMixerLogo from "assets/images/projects/testMixer.png";
+import pos from "assets/images/projects/pos.png";
 
 export const projectsList = [
   {
@@ -18,7 +18,7 @@ export const projectsList = [
     id: 2,
     title: "Qualification",
     link: "https://www.hellonotch.com/",
-    logo: notch,
+    logo: qualificationLogo,
     blurHash: "L0Aer?tjH[tPyAayj[j[00ay%xkB",
     desc: "Currently developing web backend for maktab.uz (Ministry of Education), which focus on testing students and collecting statistics of all schools and student of whole country.",
     technologies: ["Asp.Net", "C#"]
@@ -26,7 +26,7 @@ export const projectsList = [
   {
     id: 3,
     title: "POS system",
-    logo: workof,
+    logo: pos,
     blurHash: "L2M5%%0000EN00I:-oIp00kC?^sl",
     link: "https://workof.com/",
     desc: "Successfully completed point of sale platform on WPF. A material design has been used to achieve a great user interface.",
@@ -35,7 +35,7 @@ export const projectsList = [
   {
     id: 4,
     title: "Test-Mixer",
-    logo: souq,
+    logo: testMixerLogo,
     blurHash: "L1O^uE0679I00AGT?.H{00y7p2tK",
     link: null,
     desc: "A platform for preparing unique tests for each student of the presidential school (Muhammad al-Khwarizmi Specialized IT School) has been successfully developed.",
