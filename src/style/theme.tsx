@@ -33,24 +33,6 @@ export const theme = extendTheme({
     }),
   },
   components: {
-    // Heading: {
-    //   baseStyle: (props) => ({
-    //     borderBottom: "1px",
-    //     borderColor: mode("gray.200", "gray.700")(props),
-    //     pb: 2,
-    //     fontWeight: "500",
-    //   }),
-    // },
-    // Popover: {
-    //   variants: {
-    //     responsive: {
-    //       popper: {
-    //         maxWidth: 'unset',
-    //         width: 'unset'
-    //       }
-    //     }
-    //   }
-    // },
     Popover: {
       parts: ['popper'],
       baseStyle: props => ({
