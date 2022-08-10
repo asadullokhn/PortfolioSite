@@ -61,7 +61,7 @@ export const institutes = [
           description:
             "Got a high score on the algorithmic programming exam",
           date: "December, 2021"
-      },
+      }
     ]
   },
   {

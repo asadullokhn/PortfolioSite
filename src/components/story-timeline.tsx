@@ -87,9 +87,7 @@ export const StoryTimeline: React.FC<StoryTimelineProps> = ({
                 <PopoverArrow />
                 {/* <PopoverCloseButton /> */}
                 <PopoverBody>
-                  <Box 
-                  overflow="scroll"
-                  >{children}</Box>
+                  <Box>{children}</Box>
                 </PopoverBody>
               </PopoverContent>
             )}
