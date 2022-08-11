@@ -84,9 +84,9 @@ const TechStack = () => {
               <Tab
                 bg={useColorModeValue("gray.100", "gray.800")}
                 color={useColorModeValue("gray.500", "gray.500")}
-                _selected={{
-                  color: useColorModeValue("gray.100", "gray.800"),
-                  bg: useColorModeValue("gray.900", "gray.100")
+                _selected={{ 
+                  color: "blue.800",
+                  bg: "blue.100"
                 }}
                 mr={2}
                 mt={2}
@@ -102,8 +102,8 @@ const TechStack = () => {
                 bg={useColorModeValue("gray.100", "gray.800")}
                 color={useColorModeValue("gray.500", "gray.500")}
                 _selected={{
-                  color: useColorModeValue("gray.100", "gray.800"),
-                  bg: useColorModeValue("gray.900", "gray.100")
+                  color: "pink.800",
+                  bg: "pink.100"
                 }}
                 mr={2}
                 mt={2}
@@ -119,8 +119,8 @@ const TechStack = () => {
                 bg={useColorModeValue("gray.100", "gray.800")}
                 color={useColorModeValue("gray.500", "gray.500")}
                 _selected={{
-                  color: "red.800",
-                  bg: "red.100"
+                  color: "yellow.800",
+                  bg: "yellow.100"
                 }}
                 mr={2}
                 mt={2}

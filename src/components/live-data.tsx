@@ -37,11 +37,13 @@ const LiveData = () => {
 
   return (
     <PageSlideFade>
-      {loading ? (
+      {loading 
+      ? (
         <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={4}>
           <CardSkeleton />
         </SimpleGrid>
-      ) : (
+      ) 
+      : (
         <Box mt={4}>
           <StackGrid columnWidth={columnWidth}>
             {repos?.map((repo, index) => (
@@ -57,7 +59,8 @@ const LiveData = () => {
             ))}
           </StackGrid>
         </Box>
-      )}
+      )
+      }
     </PageSlideFade>
   );
 };

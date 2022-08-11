@@ -110,7 +110,7 @@ const RepositoryCard = (props: RepositoryCardProps) => {
             )}
           </VStack>
           <Box>
-            <Text color="gray.500" fontSize="sm" noOfLines={2} textAlign="left">
+            <Text color="gray.500" fontSize="sm" noOfLines={1} textAlign="left">
               {description}
             </Text>
           </Box>{" "}
