@@ -11,10 +11,7 @@ import {
   Icon,
   Flex,
   Image,
-  Badge,
-  Box
 } from "@chakra-ui/react";
-import { Link as NavLink } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { getTagColor } from "style/theme";
 import dev from "assets/images/logos/telegram.png";
@@ -34,7 +31,6 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
       <VStack
         spacing={1}
         p={4}
-        // isExternal
         _hover={{ shadow: "md", textDecoration: "none" }}
         borderWidth="1px"
         position="relative"
@@ -42,37 +38,21 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
         bg={useColorModeValue("white", "gray.800")}
         align="left"
       >
-        {article.external ? (
-          <Tooltip hasArrow label="Dev.to" placement="top">
-            <Image
-              src={devIcon}
-              width="2rem"
-              height="2rem"
-              position="absolute"
-              color="#cbd5e0"
-              right="0.5rem"
-              top="-14px"
-            />
-          </Tooltip>
-        ) : (
-          <Tooltip hasArrow label="mahmad.me" placement="top">
-            <Box position="absolute" color="#cbd5e0" right="0.5rem" top="-14px">
-              <Badge ml="1" variant="solid" colorScheme="blackAlpha">
-                Website
-              </Badge>
-            </Box>
-          </Tooltip>
-        )}
+        <Tooltip hasArrow label="Telegram" placement="top">
+          <Image
+            src={devIcon}
+            width="2rem"
+            height="2rem"
+            position="absolute"
+            color="#cbd5e0"
+            right="0.5rem"
+            top="-14px"
+          />
+        </Tooltip>
         <Heading fontSize="lg" textAlign="left"mt={0}>
-          {article.external ? (
             <Text as={Link} href={article.link} target="_blank">
               {article.title}
             </Text>
-          ) : (
-            <Link as={NavLink} to={article.link}>
-              {article.title}
-            </Link>
-          )}
         </Heading>
         <HStack spacing={2} isInline>
           <Tooltip hasArrow label="Published" placement="top">
@@ -90,8 +70,7 @@ const PostCard: React.SFC<PostCardProps> = ({ article }) => {
                 noOfLines={1}
                 fontWeight="400"
                 align="left"
-                color={textColor}
-              >
+                color={textColor}>
                 {article.views}
               </Text>
               <Icon as={FaEye} ml={1} color={textColor} />

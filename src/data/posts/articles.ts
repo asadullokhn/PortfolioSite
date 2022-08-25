@@ -1,10 +1,27 @@
 export const articles= [
   {
+    title: "Бугун RaqamliAvlod оромгоҳига ментор сифатида келдик. Муҳаммад Ал-Хоразмий номидаги IT га ихтисослаштирилган президент мактабида...",
+    desc: "",
+    tags: [],
+    link: "https://t.me/asadullokh_nurullaev/65",
+    published: "25 August 2022",
+    readTime: "1 min read",
+    views: "80"
+  },
+  {
+    title: "Энг яхши инвестиция - таълимга сарфлангани. Нажот бошқа ердамас, нажот чет эллардамас.",
+    desc: "",
+    tags: [],
+    link: "https://t.me/asadullokh_nurullaev/64",
+    published: "11 August 2022",
+    readTime: "1 min read, 5 min watch",
+    views: "151"
+  },
+  {
     title: "Bugun Moliya vazirligida IT'ga ixtisoslashgan universitetlar/o'quv markazlar boshqaruvchilari va talabalari ishtirokida \"IT Career Event\" tadbiri tashkil etildi.",
     desc: "",
     tags: [],
     link: "https://t.me/asadullokh_nurullaev/57",
-    external: true,
     published: "2 June 2022",
     readTime: "1 min read",
     views: "209"
@@ -14,7 +31,6 @@ export const articles= [
     desc: "Устозимиз доим «Қаерга топширсангиз ҳам...",
     tags: [],
     link: "https://t.me/asadullokh_nurullaev/51",
-    external: true,
     published: "30 March 2022",
     readTime: "1 min read",
     views: "1100"
@@ -24,7 +40,6 @@ export const articles= [
     desc: "Ёдингизда бўлса “Desktop app” га заказ тушганини ва шуни бошлаётганим ҳақида сўзлаган эдим...",
     tags: [],
     link: "https://t.me/asadullokh_nurullaev/50",
-    external: true,
     published: "7 March 2022",
     readTime: "1 min read",
     views: "611"
@@ -34,7 +49,6 @@ export const articles= [
     desc: "Шу вақт ичида мен ўзимни бир фикрда тутиб олдим. Фриланс ёхуд...",
     tags: [],
     link: "https://t.me/asadullokh_nurullaev/48",
-    external: true,
     published: "24 February 2022",
     readTime: "1 min read",
     views: "231"
@@ -45,7 +59,6 @@ export const articles= [
       "Najot Ta'lim markazida Foundation bitiruvchilaridan yakuniy imtihon olindi...",
     tags: [],
     link: "https://t.me/najottalim/2308",
-    external: true,
     published: "3 December 2021",
     readTime: "2 min read",
     views: "12,9k"

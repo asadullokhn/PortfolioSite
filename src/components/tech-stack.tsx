@@ -33,7 +33,7 @@ const TechStack = () => {
     setSkillsList(skills);
   }, []);
 
-  const filterSkills = tab => {
+  const filterSkills = (tab: string | any[]) => {
     if (tab.length) setSkillsList(skills.filter(skill => skill.type === tab));
     else setSkillsList(skills);
   };

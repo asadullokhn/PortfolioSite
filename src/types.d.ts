@@ -15,7 +15,6 @@ type article = {
   views: string;
   published: string;
   tags: string[];
-  external: boolean;
   readTime: string;
 }
 
