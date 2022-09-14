@@ -1,12 +1,21 @@
 export const articles= [
   {
+    title: "Кеча RaqamliAvlod оромгоҳини охирги куни эди. Видео лавҳаларда оромгоҳ ёпилиши.",
+    desc: "",
+    tags: [],
+    link: "https://t.me/asadullokh_nurullaev/67",
+    published: "31 August 2022",
+    readTime: "1 min read",
+    views: "144"
+  },
+  {
     title: "Бугун RaqamliAvlod оромгоҳига ментор сифатида келдик. Муҳаммад Ал-Хоразмий номидаги IT га ихтисослаштирилган президент мактабида...",
     desc: "",
     tags: [],
     link: "https://t.me/asadullokh_nurullaev/65",
     published: "25 August 2022",
     readTime: "1 min read",
-    views: "80"
+    views: "210"
   },
   {
     title: "Энг яхши инвестиция - таълимга сарфлангани. Нажот бошқа ердамас, нажот чет эллардамас.",
@@ -15,7 +24,7 @@ export const articles= [
     link: "https://t.me/asadullokh_nurullaev/64",
     published: "11 August 2022",
     readTime: "1 min read, 5 min watch",
-    views: "151"
+    views: "270"
   },
   {
     title: "Bugun Moliya vazirligida IT'ga ixtisoslashgan universitetlar/o'quv markazlar boshqaruvchilari va talabalari ishtirokida \"IT Career Event\" tadbiri tashkil etildi.",
@@ -24,7 +33,7 @@ export const articles= [
     link: "https://t.me/asadullokh_nurullaev/57",
     published: "2 June 2022",
     readTime: "1 min read",
-    views: "209"
+    views: "356"
   },
   {
     title: "Биринчи “job interview”… Бугун ўз йўналишим (dotnet backend) бўйича биринчи суҳбатга бордим.",
@@ -33,7 +42,7 @@ export const articles= [
     link: "https://t.me/asadullokh_nurullaev/51",
     published: "30 March 2022",
     readTime: "1 min read",
-    views: "1100"
+    views: "1,2k"
   },
   {
     title: "Биринчи хатолар…",
@@ -42,7 +51,7 @@ export const articles= [
     link: "https://t.me/asadullokh_nurullaev/50",
     published: "7 March 2022",
     readTime: "1 min read",
-    views: "611"
+    views: "633"
   },
   {
     title: "Узоқ вақт пост қоя олмадим. Икки ўқиш (учинчиси яқин кунларда бошланиш арафасида) ва...",
@@ -51,7 +60,7 @@ export const articles= [
     link: "https://t.me/asadullokh_nurullaev/48",
     published: "24 February 2022",
     readTime: "1 min read",
-    views: "231"
+    views: "768"
   },
   {
     title: "Mutaxassislik granti g'oliblari aniqlandi",

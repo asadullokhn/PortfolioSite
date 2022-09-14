@@ -17,12 +17,13 @@ import Header from "./header";
 import Projects from "./projects";
 import { projectsList } from "data/projects-list";
 import "style/style.css";
-import UserIcon from "assets/images/user_icon.png";
+import { info } from "data/home-info";
 
 const ANIMATION_DURATION = 0.4;
 const ORANGE = "#ff9400";
  
 const Home = () => {
+
   return (
     <Flex direction="column" align="center">
       <Flex direction={["column", "column", "row"]}>
@@ -44,8 +45,7 @@ const Home = () => {
         >
           <Avatar
             size={"2xl"}
-            src={UserIcon}
-            // src={"https://avatars2.githubusercontent.com/u/37842853?v=4"}
+            src={info.user_icon}
           />
         </MotionBox>
         <MotionFlex
@@ -68,29 +68,20 @@ const Home = () => {
             }
           }}
         >
-          <Header underlineColor={ORANGE} emoji="👋" mt={0} className="face">
+          <Header underlineColor={ORANGE} emoji={info.emoji} mt={0} className="face">
             Hey!
           </Header>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{" "}
             <Box as="strong" fontWeight="600">
-              Asadullokh
-            </Box>{" "}
-            and I&apos;m a{" "}
-            <Box as="span" whiteSpace="nowrap">
-              Software Engineer and
-            </Box>{" "}
-            <Box as="span" whiteSpace="nowrap">
-              an open source lover&nbsp;
+              {info.name}
             </Box>
-            from{" "}
-            <Box as="span" whiteSpace="nowrap">
-              Uzbekistan 🇺🇿
+            <Box as="span">
+            {" "}and I'm a {info.stack} and an open source lover from {info.country}
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my digital garden, where I write about the things I'm
-            working on and share what I've learned. 😊
+            {info.breaf_info}
           </Box>
         </MotionFlex>
       </Flex>

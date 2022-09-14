@@ -20,7 +20,9 @@ import {
   CardTransition
 } from "./page-transitions";
 import { MotionBox } from "./motion";
-import { companies, institutes } from "data/data";
+import { companies } from "data/companies";
+import { institutes } from "data/education";
+
 import Header from "./header";
 
 interface CardProps {

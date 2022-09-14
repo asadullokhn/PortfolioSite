@@ -20,7 +20,7 @@ const siteConfig = {
       {
         url: "https://t.me/asadullokh_nurullaev",
         label: "Telegram Account",
-        type: "twitter",
+        type: "telegram",
         icon: <FaTelegram />
       },
       {

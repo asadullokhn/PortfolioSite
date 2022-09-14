@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   Flex
 } from "@chakra-ui/react";
-import siteConfig from "configs/site-config";
+import siteConfig from "data/site-footer-config";
 
 const iconProps = {
   variant: "ghost",

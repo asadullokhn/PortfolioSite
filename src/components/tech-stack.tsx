@@ -19,7 +19,7 @@ import Section from "./section";
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from "react-icons/ai";
 import { GiStrongMan } from "react-icons/gi";
 import SkillCard from "./skill-card";
-import { skills } from "data/data";
+import { skills } from "data/skills";
 import Header from "./header";
 import { MotionBox } from "./motion";
 import { container } from "./page-transitions";

@@ -161,15 +161,19 @@ export const theme = extendTheme({
 
 export const getTagColor = type => {
   type = type.toLowerCase()
-  if (type === "WPF" || type === "wpf") {
-    return "red";
-  } else if (type === "Asp.Net") {
-    return "cyan";
-  } else if (type === "C# core") {
-    return "yellow";
-  } else if (type === "EF Core" || type === "aws") {
-    return "blue";
-  } else if (type === "chakraui" || type === "css") {
-    return "teal";
+  switch (type) {
+    case "python":
+      return "red";
+    case "wpf":
+      return "green";
+    case "asp.net":
+      return "cyan";
+    case "c#":
+      return "yellow";
+    case "c# | xaml":
+    case "ef core":
+    case "aiogram":
+    case "aws":
+      return "blue";
   }
 };
