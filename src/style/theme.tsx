@@ -175,5 +175,7 @@ export const getTagColor = type => {
     case "aiogram":
     case "aws":
       return "blue";
+    default:
+      return "brown";
   }
 };
